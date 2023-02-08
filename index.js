@@ -30,5 +30,10 @@ app.get("/",(req,res)=>{
 
 
 app.listen(port , ()=>{
-    console.log("Servidor iniciado com sucesso1")
+    try{
+        console.log("Servidor iniciado com sucesso1")
+    }catch(err){
+        console.log({err:"Erro ao iniciar o servidor"})
+    }
+    
 })
